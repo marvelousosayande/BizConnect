@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | BizConnect</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+     HEADER
+========================== -->
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.png"
+     alt="BizConnect Logo">
+
+</a>
+
+<div class="menu-toggle" id="menuToggle">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+<ul class="nav-menu" id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="businesses.html">Businesses</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li>
+
+<a href="signup.html"
+class="signup-btn active">
+
+Sign Up
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ==========================
+     SIGN UP SECTION
+========================== -->
+
+<section class="signup-page">
+
+<div class="signup-container">
+
+<h2>Create Your BizConnect Account</h2>
+
+<p>
+
+Join thousands of businesses already growing with BizConnect.
+
+</p>
+
+<form id="signupForm">
+
+<div class="input-group">
+
+<i class="fas fa-user"></i>
+
+<input
+type="text"
+id="fullName"
+placeholder="Full Name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<i class="fas fa-envelope"></i>
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+</div>
+
+  <div class="input-group">
+
+    <i class="fas fa-lock"></i>
+
+    <input
+    type="password"
+    id="password"
+    placeholder="Create Password"
+    required>
+
+</div>
+
+<div class="input-group">
+
+    <i class="fas fa-lock"></i>
+
+    <input
+    type="password"
+    id="confirmPassword"
+    placeholder="Confirm Password"
+    required>
+
+</div>
+
+<div class="terms">
+
+    <label>
+
+        <input
+        type="checkbox"
+        required>
+
+        I agree to the
+        <a href="#">Terms & Conditions</a>
+
+    </label>
+
+</div>
+
+<button
+type="submit"
+class="signup-button">
+
+<i class="fas fa-user-plus"></i>
+
+Create Account
+
+</button>
+
+<div class="login-link">
+
+Already have an account?
+
+<a href="login.html">
+
+Login Here
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     JAVASCRIPT
+========================== -->
+
+<script src="js/script.js"></script>
+
+<script type="module" src="firebase/firebase-config.js"></script>
+
+<script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>
